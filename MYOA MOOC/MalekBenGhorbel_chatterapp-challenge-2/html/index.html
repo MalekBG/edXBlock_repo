@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chatter|App</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<style> element for Internal CSS.-->
+</head>
+
+<body>
+    <section id="channel-area">
+
+        <div class="headbar">
+            <h1 id="app-name">
+                <img src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="QUACK QUACK THE LOGO IS NOT QUACKING" style="height: 56px">
+                Chatter | App
+            </h1>
+        </div>
+
+    
+
+        <h2>Favorites</h2>
+            <ul class="channel-list">
+                <li class="selected"> <span class="channel-name">The Boys</span> <span class="timestamp">07.09.2023</span><br> </li>
+                <li> <span class="channel-name">MUC</span> <span class="timestamp">07.09.2023</span> </li>
+            </ul>
+
+        <h2>Regular</h2>
+            <ul class="channel-list">
+                <li> <span class="channel-name">TUM</span> <span class="timestamp">07.09.2023</span><br> </li>
+                <li> <span class="channel-name">Winfo</span> <span class="timestamp">07.09.2023</span> </li>
+            </ul>
+
+    </section>
+
+
+    <section id="chat-area">
+
+        <div class="headbar">
+            <h1>The Boys</h1>
+            <button>Favorite</button>
+        </div>
+
+
+
+    
+
+        <div class="message-area incoming">
+
+            <div class="message-content">
+
+                <h3>Hugh Mongus</h3>
+                <p> Hello!<br> </p>
+
+            </div>
+
+            <span class="timestamp">07.09.2023</span>
+
+        </div>
+
+
+        <div class="message-area outgoing">
+
+            <div class="message-content">
+
+                <p> What's up?<br> </p>
+
+            </div>
+
+            <span class="timestamp">07.09.2023</span>
+
+        </div>
+
+
+        <div class="message-area incoming">
+
+                <div class="message-content">
+
+                    <h3>Hugh Mongus</h3>
+                    <p> Where are you?<br> </p>
+
+                </div>
+
+            <span class="timestamp">07.09.2023</span>
+
+        </div>
+
+        <div class="input-area">
+            <!--<form> element for input.-->
+            <form>
+                <!--It's a message so the input type should be text.-->
+                <input type="text" id="text-input" placeholder="Insert message here...">
+                <button>Send</button>
+            </form>
+        </div>
+    
+    </section>
+
+</body>
+</html>
