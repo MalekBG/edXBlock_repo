@@ -1,0 +1,253 @@
+/* GLOBAL */
+* {
+    font-family: Roboto, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+section {    
+    position: fixed;
+    top: 0px;
+    height: 100vh;
+}
+
+#channel-area {
+    width: 399px;
+    height: 100vh;
+    border-right: 1px solid rgb(199, 199, 199);
+}
+
+#message-area {
+    width: calc(100% - 400px);
+    left: 400px;
+}
+
+#chat-area{
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 22px;
+}
+/* APP BAR */
+
+.headbar {
+    background-color: #eeeeee;
+    color: #00838f;
+    height: 66px;
+    line-height: 66px;
+    padding: 0px 22px 0px 22px;
+}
+
+.headbar img {
+    background-color: #00838f;
+}
+
+#app-title {
+    color: #00838f;
+    margin-left: 40px;
+}
+
+h1 {
+    font-size: 18px;
+}
+
+.headbar i {
+    line-height: 66px;
+}
+
+#logo {
+    height: 44px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 5px;
+}
+
+.fab{
+    width: 44px;
+    height: 44px;
+    background-color: #00838f;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 0 #aaaaaa;
+
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    line-height: 44px;
+
+    position: absolute;
+    top: 44px;
+    right: 22px;
+
+    cursor: pointer;
+}
+
+
+/* CHANNELS LIST */
+
+h2 {
+    color: #00838f;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin: 22px 22px 11px 11px; 
+}
+
+.channel-list {
+    /* #3 #channels #list modifies h2 to ul */
+    background-color: white;
+    /* #3 #channels #bullets removed */
+    list-style-type: none;
+}
+
+.channel-list li {
+    box-sizing: border-box;
+    padding: 22px;
+    height: 66px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.channel-list li i{
+    color: #666666;
+    font-size: 20px;
+}
+
+.channel-list li.selected {
+    background-color: #eeeeee;
+    border-right: 3px solid #00838f;
+}
+
+.channel-name{
+    font-size: 16px;
+    margin: 0px 22px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    flex: 1 1 auto;
+}
+
+/* MESSAGES */
+#favorite-button{
+    cursor: pointer;
+}
+
+#message-area .headbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#message-area h1 {
+    display: inline;
+}
+.message {
+    width: 75%;
+    margin-bottom: 22px;
+}
+
+.message-content {
+    padding: 11px;
+    margin: 10px 11px;
+    text-align: left;
+}
+
+.message-content h3 {
+    font-size: 14px;
+    color: #00838f;
+    margin-bottom: 11px;
+}
+
+.message-content p {
+    font-size: 14px;
+}
+
+.incoming-message .message-content {
+    background-color: #eeeeee;
+    border-radius: 20px 20px 20px 5px;
+}
+
+.outgoing-message .message-content {
+    background-color: #00838f;
+    color: white;
+    border-radius: 20px 20px 5px 20px;
+}
+
+.outgoing-message{
+    align-self: flex-end;
+    text-align: right;
+}
+
+.message-wrapper{
+    display: flex;
+    align-items: flex-end;
+}
+
+.message-wrapper a{
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+.timestamp {
+    font-size: 12px;
+    color: #666666;
+}
+
+.incoming-message .timestamp{
+    margin-left: 35px;
+}
+
+.outgoing-message .timestamp{
+    margin-right: 35px;
+}
+
+/* MESSAGE-BUTTONS */
+
+button {
+    background-color: #00838f;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: larger;
+}
+
+#input-area{
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    bottom: 0px;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#eeeeee;
+    width: 100%;
+    height: 66px;
+    padding: 0px 22px;
+}
+
+#emoticon-button{
+    color: white;
+    background-color: #00838f;
+    font-size: 22px;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#send-button{
+    color:#00838f;
+    cursor: pointer;
+}
+
+#message-input{
+    border-radius: 10px;
+    border: none;
+    padding: 0px 10px;
+    flex-basis: 100%;
+    margin: 0px 22px;
+    height: 45px;
+}
