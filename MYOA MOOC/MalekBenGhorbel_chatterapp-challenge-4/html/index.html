@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chatter|App</title>
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <section id="channel-area">
+        <div class="headbar">
+
+                <img id="logo" src="https://ip.lfe.mw.tum.de/sections/moocus.png" alt="logo">
+                <h1 id="app-title"> 
+                    Chatter | app       
+                </h1>
+        </div>
+        <a class="fab">+</a>
+        <div>
+            <h2>Favorites</h2>
+            <ul class="channel-list">
+                <li class="selected" id="channel1" onclick="switchChannel(channel1)">
+                    <i class="material-icons">group</i><span class="channel-name">The Boys</span>
+                    <span class="timestamp">11:51</span>
+                </li>
+                <li  id="channel2" onclick="switchChannel(channel2)">
+                    <i class="material-icons">group</i><span class="channel-name">MUC</span>
+                    <span class="timestamp">10:51</span>
+                </li>
+            </ul>
+
+            <h2>Regular</h2>
+            <ul class="channel-list">
+                <li  id="channel3" onclick="switchChannel(channel3)">
+                    <i class="material-icons">group</i><span class="channel-name">TUM</span>
+                    <span class="timestamp">Yesterday</span>
+                </li>
+                <li  id="channel4" onclick="switchChannel(channel4)">
+                    <i class="material-icons">group</i> <span class="channel-name">Winfo</span>
+                    <span class="timestamp">23 May 2018</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- chat area -->
+    <section id="message-area">
+        <div class="headbar"> 
+            <h1 id="channelName">The Boys</h1>
+            <a class="material-icons" id="favorite-button" onclick="toggleFavorite()">favorite</a>
+        </div>
+        <div id="chat-area">
+            <div class="message incoming-message">
+                <div class="message-wrapper">
+                    <a class="material-icons">account_circle</a>
+                    <div class="message-content">
+                        <h3>Hugh Mongus</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat eveniet porro officia,
+                                nesciunt aut delectus incidunt possimus illum placeat repudiandae reiciendis corporis ab.
+                                ste vel ducimus blanditiis, tempora adipisci doloribus.
+                            </p>
+                    </div>
+                </div>
+                <span class="timestamp">11:45</span>
+            </div>
+
+            <div class="message incoming-message">
+                <div class="message-wrapper">
+                    <a class="material-icons">account_circle</a>
+                    <div class="message-content">
+                        <h3>Hugh Mongus</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat eveniet porro officia,
+                                nesciunt aut delectus incidunt possimus illum placeat repudiandae reiciendis corporis ab.
+                                Iste vel ducimus blanditiis, tempora adipisci doloribus.
+                            </p>
+                    </div>
+                </div>
+                <span class="timestamp">11:49</span>
+            </div>
+
+            <div class="message outgoing-message">
+                <div class="message-wrapper">
+                    <div class="message-content">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat eveniet porro officia,
+                            nesciunt aut delectus incidunt possimus illum placeat repudiandae reiciendis corporis ab.
+                            Iste vel ducimus blanditiis, tempora adipisci doloribus.
+                        </p>
+                    </div>
+                    <a class="material-icons">account_circle</a>
+                </div>
+                <span class="timestamp">11:49</span>
+            </div>
+
+            <div class="message incoming-message">
+                <div class="message-wrapper">
+                    <a class="material-icons">account_circle</a>
+                    <div class="message-content">
+                        <h3>Hugh Mongus</h3>
+                        <p>Lorem ipsum Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur dolor
+                            voluptas debitis deleniti iure consequatur saepe! Sed repellendus accusantium neque nemo
+                            doloremque ipsa deleniti. Cumque rem repudiandae accusamus dolores adipisci!.
+                        </p>
+                    </div>
+                </div>
+                <span class="timestamp">11:49</span>
+            </div>
+        </div>
+        <div id="input-area">
+            <i class="material-icons" id="emoticon-button">insert_emoticon</i>
+            <input
+              type="text"
+              id="message-input"
+              name="message-input"
+              minlength="1"
+              maxlength="500"
+              placeholder="... write your message"
+            />
+            <a class="material-icons button" id="send-button" onclick="sendMessage()">send</a>
+        </div>
+    </section>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/channels.js"></script>
+</body>
+
+</html>
